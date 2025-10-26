@@ -218,7 +218,7 @@ namespace ResidentManagementSystem
             }
         }
 
-        // ***** THIS IS THE CORRECT VALIDATION METHOD *****
+        // ***** THIS IS  VALIDATION METHOD
         private bool ValidateInputs()
         {
             // 1. Required Fields Check (Phone number is now optional)
