@@ -1,67 +1,112 @@
-# Resident Management System for Grama Niladhari Division
+Resident Management System for Grama Niladhari Division
+A standalone desktop application developed as part of the ITE 1943 – ICT Project for the Bachelor of Information Technology degree at the University of Moratuwa.
+Submitted by: MHR Ahamed (Rihamhanifa)
+Index Number: E2410181
+![alt text](INSERT_YOUR_DASHBOARD_SCREENSHOT_URL_HERE)
+Screenshot of the main application dashboard.
+📋 Table of Contents
+About The Project
+Problem Statement
+Key Features
+Built With
+Getting Started
+Prerequisites
+Installation
+Screenshots
+Contact
+📖 About The Project
+The Resident Management System is a C# Windows Forms desktop application designed to replace the inefficient and error-prone manual, paper-based record-keeping methods used in Grama Niladhari (GN) divisions.
+This system provides a secure, centralized, and user-friendly digital solution for GN officers to manage resident information effectively. It automates the entire data management lifecycle, from data entry and validation to quick retrieval and secure storage, thereby improving administrative efficiency and data accuracy.
+🎯 Problem Statement
+Traditional record-keeping in GN divisions suffers from several critical issues:
+High Risk of Human Error: Manual data entry leads to inaccurate and inconsistent records.
+Data Vulnerability: Physical documents are susceptible to loss and damage.
+Time-Consuming Processes: Searching for and retrieving specific resident information is a slow and manual task.
+Lack of Data Validation: There is no mechanism to enforce correct data formatting, leading to poor data quality.
+Poor Security: Sensitive personal data is not adequately protected.
+This application was built to solve these problems by providing a robust and modern digital alternative.
+✨ Key Features
+Secure User Authentication: Access to the system is protected by a username and password.
+Centralized Dashboard: An all-in-one interface to view and manage all resident records.
+Full CRUD Functionality: Easy-to-use forms for Creating, Reading, Updating, and Deleting resident data.
+Powerful Search: Instantly filter thousands of records by Name, NIC, or Address.
+Robust Data Validation:
+Checks for required fields (Name, NIC, Address, Gender).
+Validates the format for Sri Lankan NICs (both old 10-character and new 12-digit formats).
+Validates the format for phone numbers (optional, but must be 10 digits if provided).
+User-Friendly Interface:
+A clean, modern dark-themed design.
+Logical Tab Order for easy keyboard navigation.
+Helpful Tooltips to guide the user.
+🛠️ Built With
+This project was built using the following technologies:
+Backend:
+C# (C-Sharp)
+.NET Framework 4.8
+Frontend:
+Windows Forms (WinForms)
+Database:
+MySQL (managed via XAMPP)
+IDE:
+Microsoft Visual Studio 2022
+🚀 Getting Started
+To get a local copy up and running, follow these simple steps.
+Prerequisites
+You will need the following software installed on your machine:
+Windows 10 or 11
+.NET Framework 4.8 or later (usually included with Windows updates).
+XAMPP: A local server environment that includes MySQL.
+Download from Apache Friends
+Installation
+Set up the Database:
+Start the Apache and MySQL modules from the XAMPP Control Panel.
+Go to http://localhost/phpmyadmin in your web browser.
+Create a new database named resident_database.
+Select the new database, go to the "SQL" tab, and execute the following SQL script to create the necessary tables:
+code
+SQL
+-- Users Table
+CREATE TABLE users (
+    Username VARCHAR(50) NOT NULL PRIMARY KEY,
+    Password VARCHAR(50) NOT NULL
+);
 
-## 📋 Project Overview
+-- Residents Table
+CREATE TABLE residents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    dob DATE NOT NULL,
+    nic VARCHAR(12) UNIQUE NOT NULL,
+    address TEXT NOT NULL,
+    phone VARCHAR(15),
+    email VARCHAR(100),
+    occupation VARCHAR(50),
+    gender ENUM('Male', 'Female', 'Other') NOT NULL,
+    registered_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-The **Resident Management System** is a comprehensive desktop application designed to modernize and streamline the administrative tasks of Grama Niladhari officers in Sri Lanka. This system replaces traditional, inefficient manual record-keeping methods with a secure, automated digital solution. It empowers officers to efficiently manage resident data, ensuring higher accuracy, data security, and improved public service delivery.
-
-This project was developed as part of the **ITE 1943 – ICT Project** for the Bachelor of Information Technology (External Degree) program at the University of Moratuwa.
-
-## ✨ Key Features
-
-*   **🔐 Secure User Authentication:** A robust login system ensures that only authorized personnel can access sensitive resident data.
-*   **📊 Centralized Dashboard:** An intuitive, all-in-one dashboard provides a real-time overview of all resident records in a clear, sortable data grid.
-*   **➕ Efficient Data Entry:** A structured form with built-in data validation (e.g., NIC format, required fields) minimizes human error during data entry.
-*   **🔍 Powerful Search Functionality:** Instantly find any resident record by searching for their Name, NIC number, or Address.
-*   **📝 Seamless CRUD Operations:** Easily Create, Read, Update, and Delete resident records through a user-friendly interface.
-*   **🛡️ Data Integrity & Security:** Prevents duplicate entries (e.g., duplicate NICs) and ensures critical data is not accidentally deleted through user confirmation dialogs.
-*   **💻 Offline Capability:** Built as a standalone desktop application, it functions reliably without requiring a constant internet connection.
-
-## 🛠️ Technology Stack
-
-*   **Language:** C#
-*   **Framework:** .NET Framework 4.8 (Windows Forms)
-*   **Database:** MySQL (Local instance managed via XAMPP) or SQLite (for portable version)
-*   **IDE:** Microsoft Visual Studio 2022
-
-## 🚀 Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-*   **Operating System:** Windows 10 or later.
-*   **Microsoft Visual Studio 2022** with ".NET desktop development" workload installed.
-*   **XAMPP** (if using MySQL version) OR no extra prerequisites if using the SQLite version.
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/ResidentManagementSystem.git
-    ```
-2.  **Open the project:**
-    *   Navigate to the cloned directory and open the `ResidentManagementSystem.sln` file in Visual Studio 2022.
-3.  **Database Setup (For MySQL Version):**
-    *   Start Apache and MySQL modules in XAMPP Control Panel.
-    *   Open phpMyAdmin (`http://localhost/phpmyadmin`).
-    *   Create a new database named `resident_database`.
-    *   Import the provided `database_script.sql` file (located in the `Database` folder of this repository) to create the necessary tables (`users`, `residents`).
-    *   *Note: If using the SQLite version, the database file is already included in the project.*
-4.  **Build and Run:**
-    *   In Visual Studio, click the "Start" button (or press F5) to build and run the application.
-5.  **Login:**
-    *   Use the default admin credentials (if set up in your SQL script) to log in.
-
-## 📸 Screenshots
-
-### Login Screen
-*(Place a screenshot of your login screen here)*
-![Login Screen](path/to/your/login_screenshot.png)
-
-### Main Dashboard
-*(Place a screenshot of your dashboard here)*
-![Main Dashboard](path/to/your/dashboard_screenshot.png)
-
-### Add/Update Resident Form
-*(Place a screenshot of your add/update form here)*
-![Ad
+-- Insert a default user
+INSERT INTO users (Username, Password) VALUES ('admin', '123');
+Run the Application:
+Clone this repository or download the source code.
+Open the solution file (ResidentManagement-System.sln) in Visual Studio.
+Press the "Start" button (or F5) to build and run the project.
+Log in with Username: admin and Password: 123.
+🖼️ Screenshots
+<p align="center">
+<img src="<INSERT_YOUR_LOGIN_SCREENSHOT_URL_HERE>" width="45%" alt="Login Screen">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="<INSERT_YOUR_VALIDATION_SCREENSHOT_URL_HERE>" width="45%" alt="Validation Error">
+</p>
+<p align="center">
+<em>Login Screen and an example of Input Validation.</em>
+</p>
+<p align="center">
+<img src="<INSERT_YOUR_SEARCH_SCREENSHOT_URL_HERE>" width="70%" alt="Search Results">
+</p>
+<p align="center">
+<em>Powerful search filters the data grid instantly.</em>
+</p>
+📧 Contact
+MHR Ahamed (Rihamhanifa) - [Your Email Address] - [Link to your LinkedIn profile, optional]
+Project Link: https://github.com/Rihamhanifa/ResidentManagementSystem
