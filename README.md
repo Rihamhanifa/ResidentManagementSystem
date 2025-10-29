@@ -1,265 +1,67 @@
 # Resident Management System for Grama Niladhari Division
 
-![Project Status](https://img.shields.io/badge/status-complete-green)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![Language](https://img.shields.io/badge/language-C%23-purple)
+## 📋 Project Overview
 
-## 📖 About The Project
+The **Resident Management System** is a comprehensive desktop application designed to modernize and streamline the administrative tasks of Grama Niladhari officers in Sri Lanka. This system replaces traditional, inefficient manual record-keeping methods with a secure, automated digital solution. It empowers officers to efficiently manage resident data, ensuring higher accuracy, data security, and improved public service delivery.
 
-The **Resident Management System** is a standalone desktop application designed to digitize and streamline the administrative tasks of Grama Niladhari divisions in Sri Lanka. It replaces traditional, inefficient paper-based record-keeping with a secure, automated digital solution.
+This project was developed as part of the **ITE 1943 – ICT Project** for the Bachelor of Information Technology (External Degree) program at the University of Moratuwa.
 
-This system allows authorized officers to efficiently manage resident data, ensuring accuracy, security, and quick retrieval of information. It was developed as part of the ITE 1943 ICT Project (Level 01) for the Bachelor of Information Technology degree at the University of Moratuwa.
+## ✨ Key Features
 
-### Key Features
-*   **Secure User Authentication:** Role-based login to prevent unauthorized access.
-*   **Centralized Dashboard:** An intuitive interface for managing all resident records.
-*   **CRUD Operations:** Easily Add, View, Update, and Delete resident records.
-*   **Powerful Search:** Instantly filter records by Full Name, NIC number, or Address.
-*   **Data Validation:** Robust input checks to ensure data integrity (e.g., NIC format, required fields).
-*   **User-Friendly Interface:** Designed for ease of use with logical tab ordering and helpful tooltips.
+*   **🔐 Secure User Authentication:** A robust login system ensures that only authorized personnel can access sensitive resident data.
+*   **📊 Centralized Dashboard:** An intuitive, all-in-one dashboard provides a real-time overview of all resident records in a clear, sortable data grid.
+*   **➕ Efficient Data Entry:** A structured form with built-in data validation (e.g., NIC format, required fields) minimizes human error during data entry.
+*   **🔍 Powerful Search Functionality:** Instantly find any resident record by searching for their Name, NIC number, or Address.
+*   **📝 Seamless CRUD Operations:** Easily Create, Read, Update, and Delete resident records through a user-friendly interface.
+*   **🛡️ Data Integrity & Security:** Prevents duplicate entries (e.g., duplicate NICs) and ensures critical data is not accidentally deleted through user confirmation dialogs.
+*   **💻 Offline Capability:** Built as a standalone desktop application, it functions reliably without requiring a constant internet connection.
 
-## 🛠️ Built With
+## 🛠️ Technology Stack
 
-*   [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - Primary programming language.
-*   [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) - Windows Forms (WinForms) for the user interface.
-*   [MySQL](https://www.mysql.com/) - Relational database for data storage (managed via XAMPP).
-*   [Visual Studio 2022](https://visualstudio.microsoft.com/) - Integrated Development Environment (IDE).
+*   **Language:** C#
+*   **Framework:** .NET Framework 4.8 (Windows Forms)
+*   **Database:** MySQL (Local instance managed via XAMPP) or SQLite (for portable version)
+*   **IDE:** Microsoft Visual Studio 2022
 
 ## 🚀 Getting Started
 
-To run this project locally, follow these steps.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-*   Windows Operating System (Windows 10/11 recommended).
-*   [XAMPP](https://www.apachefriends.org/download.html) installed and running (Apache & MySQL modules).
-*   .NET Framework 4.8 or later.
 
-### Installation & Setup
+*   **Operating System:** Windows 10 or later.
+*   **Microsoft Visual Studio 2022** with ".NET desktop development" workload installed.
+*   **XAMPP** (if using MySQL version) OR no extra prerequisites if using the SQLite version.
 
-1.  **Clone the Repository**
-    ```sh
-    git clone https://github.com/# Resident Management System for Grama Niladhari Division
+### Installation
 
-![Project Status](https://img.shields.io/badge/status-complete-green)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![Language](https://img.shields.io/badge/language-C%23-purple)
-
-## 📖 About The Project
-
-The **Resident Management System** is a standalone desktop application designed to digitize and streamline the administrative tasks of Grama Niladhari divisions in Sri Lanka. It replaces traditional, inefficient paper-based record-keeping with a secure, automated digital solution.
-
-This system allows authorized officers to efficiently manage resident data, ensuring accuracy, security, and quick retrieval of information. It was developed as part of the ITE 1943 ICT Project (Level 01) for the Bachelor of Information Technology degree at the University of Moratuwa.
-
-### Key Features
-*   **Secure User Authentication:** Role-based login to prevent unauthorized access.
-*   **Centralized Dashboard:** An intuitive interface for managing all resident records.
-*   **CRUD Operations:** Easily Add, View, Update, and Delete resident records.
-*   **Powerful Search:** Instantly filter records by Full Name, NIC number, or Address.
-*   **Data Validation:** Robust input checks to ensure data integrity (e.g., NIC format, required fields).
-*   **User-Friendly Interface:** Designed for ease of use with logical tab ordering and helpful tooltips.
-
-## 🛠️ Built With
-
-*   [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - Primary programming language.
-*   [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) - Windows Forms (WinForms) for the user interface.
-*   [MySQL](https://www.mysql.com/) - Relational database for data storage (managed via XAMPP).
-*   [Visual Studio 2022](https://visualstudio.microsoft.com/) - Integrated Development Environment (IDE).
-
-## 🚀 Getting Started
-
-To run this project locally, follow these steps.
-
-### Prerequisites
-*   Windows Operating System (Windows 10/11 recommended).
-*   [XAMPP](https://www.apachefriends.org/download.html) installed and running (Apache & MySQL modules).
-*   .NET Framework 4.8 or later.
-
-### Installation & Setup
-
-1.  **Clone the Repository**
-    ```sh
-    git clone https://github.com/# Resident Management System for Grama Niladhari Division
-
-![Project Status](https://img.shields.io/badge/status-complete-green)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![Language](https://img.shields.io/badge/language-C%23-purple)
-
-## 📖 About The Project
-
-The **Resident Management System** is a standalone desktop application designed to digitize and streamline the administrative tasks of Grama Niladhari divisions in Sri Lanka. It replaces traditional, inefficient paper-based record-keeping with a secure, automated digital solution.
-
-This system allows authorized officers to efficiently manage resident data, ensuring accuracy, security, and quick retrieval of information. It was developed as part of the ITE 1943 ICT Project (Level 01) for the Bachelor of Information Technology degree at the University of Moratuwa.
-
-### Key Features
-*   **Secure User Authentication:** Role-based login to prevent unauthorized access.
-*   **Centralized Dashboard:** An intuitive interface for managing all resident records.
-*   **CRUD Operations:** Easily Add, View, Update, and Delete resident records.
-*   **Powerful Search:** Instantly filter records by Full Name, NIC number, or Address.
-*   **Data Validation:** Robust input checks to ensure data integrity (e.g., NIC format, required fields).
-*   **User-Friendly Interface:** Designed for ease of use with logical tab ordering and helpful tooltips.
-
-## 🛠️ Built With
-
-*   [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) - Primary programming language.
-*   [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) - Windows Forms (WinForms) for the user interface.
-*   [MySQL](https://www.mysql.com/) - Relational database for data storage (managed via XAMPP).
-*   [Visual Studio 2022](https://visualstudio.microsoft.com/) - Integrated Development Environment (IDE).
-
-## 🚀 Getting Started
-
-To run this project locally, follow these steps.
-
-### Prerequisites
-*   Windows Operating System (Windows 10/11 recommended).
-*   [XAMPP](https://www.apachefriends.org/download.html) installed and running (Apache & MySQL modules).
-*   .NET Framework 4.8 or later.
-
-### Installation & Setup
-
-1.  **Clone the Repository**
-    ```sh
-    git clone https://github.com/Rihamhanifa/resident-management-system.git
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/ResidentManagementSystem.git
     ```
-2.  **Database Setup**
-    *   Open **XAMPP Control Panel** and start **Apache** and **MySQL**.
-    *   Go to `http://localhost/phpmyadmin` in your browser.
+2.  **Open the project:**
+    *   Navigate to the cloned directory and open the `ResidentManagementSystem.sln` file in Visual Studio 2022.
+3.  **Database Setup (For MySQL Version):**
+    *   Start Apache and MySQL modules in XAMPP Control Panel.
+    *   Open phpMyAdmin (`http://localhost/phpmyadmin`).
     *   Create a new database named `resident_database`.
-    *   Select the new database, go to the **SQL** tab, and execute the following script to create the necessary tables and a default admin user:
-
-    ```sql
-    CREATE TABLE users (
-        Username VARCHAR(50) NOT NULL PRIMARY KEY,
-        Password VARCHAR(50) NOT NULL
-    );
-
-    INSERT INTO users (Username, Password) VALUES ('admin', '123');
-
-    CREATE TABLE residents (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        full_name VARCHAR(100) NOT NULL,
-        dob DATE NOT NULL,
-        nic VARCHAR(12) UNIQUE NOT NULL,
-        address TEXT NOT NULL,
-        phone VARCHAR(15),
-        email VARCHAR(100),
-        occupation VARCHAR(50),
-        gender ENUM('Male', 'Female', 'Other') NOT NULL,
-        registered_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
-    ```
-
-3.  **Run the Application**
-    *   Navigate to the project folder and open the solution file (`.sln`) in Visual Studio.
-    *   Build and run the project (F5).
-    *   **Login Credentials:**
-        *   Username: `admin`
-        *   Password: `123`
+    *   Import the provided `database_script.sql` file (located in the `Database` folder of this repository) to create the necessary tables (`users`, `residents`).
+    *   *Note: If using the SQLite version, the database file is already included in the project.*
+4.  **Build and Run:**
+    *   In Visual Studio, click the "Start" button (or press F5) to build and run the application.
+5.  **Login:**
+    *   Use the default admin credentials (if set up in your SQL script) to log in.
 
 ## 📸 Screenshots
 
-*(Optional: You can upload your screenshots to an 'assets' folder in your repo and link them here for a better presentation)*
+### Login Screen
+*(Place a screenshot of your login screen here)*
+![Login Screen](path/to/your/login_screenshot.png)
 
-## 👤 Author
+### Main Dashboard
+*(Place a screenshot of your dashboard here)*
+![Main Dashboard](path/to/your/dashboard_screenshot.png)
 
-**MHR Ahamed**
-*   Student ID: E2410181
-*   Faculty of Information Technology, University of Moratuwa
-
----
-*Note: This is an academic project developed for educational purposes.*/resident-management-system.git
-    ```
-2.  **Database Setup**
-    *   Open **XAMPP Control Panel** and start **Apache** and **MySQL**.
-    *   Go to `http://localhost/phpmyadmin` in your browser.
-    *   Create a new database named `resident_database`.
-    *   Select the new database, go to the **SQL** tab, and execute the following script to create the necessary tables and a default admin user:
-
-    ```sql
-    CREATE TABLE users (
-        Username VARCHAR(50) NOT NULL PRIMARY KEY,
-        Password VARCHAR(50) NOT NULL
-    );
-
-    INSERT INTO users (Username, Password) VALUES ('admin', '123');
-
-    CREATE TABLE residents (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        full_name VARCHAR(100) NOT NULL,
-        dob DATE NOT NULL,
-        nic VARCHAR(12) UNIQUE NOT NULL,
-        address TEXT NOT NULL,
-        phone VARCHAR(15),
-        email VARCHAR(100),
-        occupation VARCHAR(50),
-        gender ENUM('Male', 'Female', 'Other') NOT NULL,
-        registered_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
-    ```
-
-3.  **Run the Application**
-    *   Navigate to the project folder and open the solution file (`.sln`) in Visual Studio.
-    *   Build and run the project (F5).
-    *   **Login Credentials:**
-        *   Username: `admin`
-        *   Password: `123`
-
-## 📸 Screenshots
-
-*(Optional: You can upload your screenshots to an 'assets' folder in your repo and link them here for a better presentation)*
-
-## 👤 Author
-
-**MHR Ahamed**
-*   Student ID: E2410181
-*   Faculty of Information Technology, University of Moratuwa
-
----
-*Note: This is an academic project developed for educational purposes.*/resident-management-system.git
-    ```
-2.  **Database Setup**
-    *   Open **XAMPP Control Panel** and start **Apache** and **MySQL**.
-    *   Go to `http://localhost/phpmyadmin` in your browser.
-    *   Create a new database named `resident_database`.
-    *   Select the new database, go to the **SQL** tab, and execute the following script to create the necessary tables and a default admin user:
-
-    ```sql
-    CREATE TABLE users (
-        Username VARCHAR(50) NOT NULL PRIMARY KEY,
-        Password VARCHAR(50) NOT NULL
-    );
-
-    INSERT INTO users (Username, Password) VALUES ('admin', '123');
-
-    CREATE TABLE residents (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        full_name VARCHAR(100) NOT NULL,
-        dob DATE NOT NULL,
-        nic VARCHAR(12) UNIQUE NOT NULL,
-        address TEXT NOT NULL,
-        phone VARCHAR(15),
-        email VARCHAR(100),
-        occupation VARCHAR(50),
-        gender ENUM('Male', 'Female', 'Other') NOT NULL,
-        registered_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    );
-    ```
-
-3.  **Run the Application**
-    *   Navigate to the project folder and open the solution file (`.sln`) in Visual Studio.
-    *   Build and run the project (F5).
-    *   **Login Credentials:**
-        *   Username: `admin`
-        *   Password: `123`
-
-## 📸 Screenshots
-
-*(Optional: You can upload your screenshots to an 'assets' folder in your repo and link them here for a better presentation)*
-
-## 👤 Author
-
-**MHR Ahamed**
-*   Student ID: E2410181
-*   Faculty of Information Technology, University of Moratuwa
-
----
-*Note: This is an academic project developed for educational purposes.*
+### Add/Update Resident Form
+*(Place a screenshot of your add/update form here)*
+![Ad
