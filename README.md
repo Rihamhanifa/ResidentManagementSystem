@@ -174,8 +174,8 @@ This project provides a solid foundation, but there are many opportunities for f
 ## 📬 Contact
 For questions, suggestions, or issues, feel free to reach out:  
 
-- **GitHub**: [Rihamhanifa](https://github.com/Rihamhanifa)
+- **GitHub**  : [Rihamhanifa](https://github.com/Rihamhanifa)
 - **LinkedIn**: [Riham Hanifa](https://www.linkedin.com/in/riham-hanifa/)  
-- **Email**: *rihamarh0@gmail.com*
+- **Email**   : *rihamarh0@gmail.com*
 
 Project Link: [https://github.com/Rihamhanifa/ResidentManagementSystem](https://github.com/Rihamhanifa/ResidentManagementSystem)
